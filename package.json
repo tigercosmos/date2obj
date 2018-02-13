@@ -1,6 +1,6 @@
 {
   "name": "date2json",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parse Date to Json in JavaScript ",
   "main": "index.js",
   "scripts": {

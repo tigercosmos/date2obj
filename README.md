@@ -10,6 +10,7 @@ npm i date2json --save
 
 ```js
 data2json() // Get current time
+data2json(new Date()) // Equal to the first one
 data2json(new Date(1518545575000)) // Put Date object in the function to get that time
 ```
 
@@ -18,6 +19,7 @@ const date2json = require('date2json');
 
 conat currentTime = data2json();
 console.log(currentTime);
+// Local time
 // {
 //   year: 'YYYY',
 //   month: 'MM',
@@ -29,6 +31,7 @@ console.log(currentTime);
 
 const otherTime = date2json(new Date(1518545575000));
 console.log(otherTime);
+// Local time in UTC +8
 // {
 //   year: "2018",
 //   month: "02",
