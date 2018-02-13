@@ -1,0 +1,26 @@
+{
+  "name": "date2json",
+  "version": "0.0.0",
+  "description": "Parse Date to Json in JavaScript ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigercosmos/date2json.git"
+  },
+  "keywords": [
+    "data",
+    "json"
+  ],
+  "author": "tigercosmos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tigercosmos/date2json/issues"
+  },
+  "homepage": "https://github.com/tigercosmos/date2json#readme",
+  "devDependencies": {
+    "assert": "^1.4.1"
+  }
+}
