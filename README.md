@@ -20,7 +20,7 @@ data2json(new Date(1518545575000)) // Put Date object in the function to get tha
 ```js
 const date2json = require('date2json');
 
-conat currentTime = data2json();
+const currentTime = data2json();
 console.log(currentTime);
 // Local time
 // {
