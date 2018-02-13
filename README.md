@@ -34,7 +34,7 @@ console.log(currentTime);
 
 const otherTime = date2json(new Date(1518545575000));
 console.log(otherTime);
-// Local time in UTC +8
+// Local time with the epoch
 // {
 //   year: "2018",
 //   month: "02",
