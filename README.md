@@ -12,15 +12,15 @@ npm i date2json --save
 ```
 
 ```js
-data2json() // Get current time
-data2json(new Date()) // Equal to the first one
-data2json(new Date(1518545575000)) // Put Date object in the function to get that time
+date2json() // Get current time
+date2json(new Date()) // Equal to the first one
+date2json(new Date(1518545575000)) // Put Date object in the function to get that time
 ```
 
 ```js
 const date2json = require('date2json');
 
-const currentTime = data2json();
+const currentTime = date2json();
 console.log(currentTime);
 // Local time
 // {
