@@ -1,6 +1,6 @@
 {
   "name": "date2obj",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Parse Date to Simple Object in JavaScript ",
   "main": "index.js",
   "scripts": {

@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/tigercosmos/date2obj.svg?branch=master)](https://travis-ci.org/tigercosmos/date2obj)
 [![npm version](https://badge.fury.io/js/date2obj.svg)](https://badge.fury.io/js/date2obj)
 
-Parse Date to Json in JavaScript
+Parse Date to Simple Object in JavaScript
 
 ## Usage
 
