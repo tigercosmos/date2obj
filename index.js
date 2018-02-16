@@ -2,7 +2,7 @@ function format(val, figure) {
     return val < 10 * (figure - 1) ? `0${val}` : `${val}`;
 }
 
-function date2json(dateObject) {
+function date2obj(dateObject) {
     const date = dateObject || new Date();
 
     const year = format(date.getFullYear(), 4);
@@ -22,4 +22,4 @@ function date2json(dateObject) {
     };
 }
 
-module.exports = date2json;
+module.exports = date2obj;

@@ -1,26 +1,26 @@
-# date2json
+# date2obj
 
-[![Build Status](https://travis-ci.org/tigercosmos/date2json.svg?branch=master)](https://travis-ci.org/tigercosmos/date2json)
-[![npm version](https://badge.fury.io/js/date2json.svg)](https://badge.fury.io/js/date2json)
+[![Build Status](https://travis-ci.org/tigercosmos/date2obj.svg?branch=master)](https://travis-ci.org/tigercosmos/date2obj)
+[![npm version](https://badge.fury.io/js/date2obj.svg)](https://badge.fury.io/js/date2obj)
 
 Parse Date to Json in JavaScript
 
 ## Usage
 
 ```bash
-npm i date2json --save
+npm i date2obj --save
 ```
 
 ```js
-date2json() // Get current time
-date2json(new Date()) // Equal to the first one
-date2json(new Date(1518545575000)) // Put Date object in the function to get that time
+date2obj() // Get current time
+date2obj(new Date()) // Equal to the first one
+date2obj(new Date(1518545575000)) // Put Date object in the function to get that time
 ```
 
 ```js
-const date2json = require('date2json');
+const date2obj = require('date2obj');
 
-const currentTime = date2json();
+const currentTime = date2obj();
 console.log(currentTime);
 // Local time
 // {
@@ -32,7 +32,7 @@ console.log(currentTime);
 //   second: 'SS'
 // }
 
-const otherTime = date2json(new Date(1518545575000));
+const otherTime = date2obj(new Date(1518545575000));
 console.log(otherTime);
 // Local time with the epoch
 // {
