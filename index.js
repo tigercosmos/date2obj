@@ -1,5 +1,9 @@
 function format(val, figure) {
-    return val < 10 * (figure - 1) ? `0${val}` : `${val}`;
+    let valStr = `${val}`;
+    for (let i = valStr.length; i < figure; i++) {
+        valStr = `0${valStr}`;
+    }
+    return valStr;
 }
 
 function date2obj(dateObject) {
