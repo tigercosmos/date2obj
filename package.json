@@ -1,6 +1,6 @@
 {
   "name": "date2obj",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Parse Date to Simple Object in JavaScript ",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/tigercosmos/date2obj.git"
   },
   "keywords": [
-    "data",
-    "json"
+    "date",
+    "object"
   ],
   "author": "tigercosmos",
   "license": "MIT",
