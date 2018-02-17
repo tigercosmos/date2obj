@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/tigercosmos/date2obj.svg?branch=master)](https://travis-ci.org/tigercosmos/date2obj)
 [![npm version](https://badge.fury.io/js/date2obj.svg)](https://badge.fury.io/js/date2obj)
+[![npm](https://img.shields.io/npm/dt/date2obj.svg?style=flat-square)](https://www.npmjs.com/package/date2obj)
 
 Parse Date to Simple Object in JavaScript
 
