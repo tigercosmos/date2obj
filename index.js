@@ -6,24 +6,28 @@ function format(val, figure) {
     return valStr;
 }
 
-function date2obj(dateObject) {
+const formatterBy = {
+    year: format(date.getFullYear(), 4),
+    month: format(date.getMonth() + 1, 2),
+    day: format(date.getDate(), 2),
+    hour: format(date.getHours(), 2),
+    minute: format(date.getMinutes(), 2),
+    second: format(date.getSeconds(), 2),
+};
+
+function date2obj(dateObject, neededFields) {
     const date = dateObject || new Date();
+    const fields = neededFields || Object.keys(formatterBy);
 
-    const year = format(date.getFullYear(), 4);
-    const month = format(date.getMonth() + 1, 2);
-    const day = format(date.getDate(), 2);
-    const hour = format(date.getHours(), 2);
-    const minute = format(date.getMinutes(), 2);
-    const second = format(date.getSeconds(), 2);
+    let result;
 
-    return {
-        year,
-        month,
-        day,
-        hour,
-        minute,
-        second
-    };
+    fields.forEach(function(field) {
+        if (formatterBy[field]) {
+            result[field] = formatterBy[field](dateObject);
+        }
+    });
+
+    return result;
 }
 
 module.exports = date2obj;
