@@ -44,7 +44,7 @@ testobj(
 let date3 = new Date(1518545575000);
 const utc3 = date3.getTime() + (date3.getTimezoneOffset() * 60000);
 date3 = new Date(utc3 + (3600000 * 8));
-const d3 = date2obj(new Date(date3), ['hour', 'minute', 'second']);
+const d3 = date2obj(new Date(date3), {fields: ['hour', 'minute', 'second']});
 testobj(
     d3, {
         hour: "02",
