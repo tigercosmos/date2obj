@@ -8,8 +8,6 @@ function testobj(data1, data2) {
     for (item in data1) {
         assert.equal(data1[item], data2[item],
             `${item} not equeal: ${data1[item]} and ${data2[item]}`);
-
-        return;
     }
 }
 

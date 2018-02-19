@@ -27,9 +27,9 @@ const formatterBy = {
     },
 };
 
-function date2obj(dateObject, neededFields) {
+function date2obj(dateObject, options) {
     const date = dateObject || new Date();
-    const fields = neededFields || Object.keys(formatterBy);
+    const fields = (options && options.fields) || Object.keys(formatterBy);
 
     let result = {};
 
