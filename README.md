@@ -7,7 +7,7 @@
 
 Parse Date to Simple Object in JavaScript
 
-? **Zero dependencies**
+:collision: **Zero dependencies**
 
 ## Usage
 ```bash
