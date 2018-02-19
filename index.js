@@ -7,23 +7,35 @@ function format(val, figure) {
 }
 
 const formatterBy = {
-    year: format(date.getFullYear(), 4),
-    month: format(date.getMonth() + 1, 2),
-    day: format(date.getDate(), 2),
-    hour: format(date.getHours(), 2),
-    minute: format(date.getMinutes(), 2),
-    second: format(date.getSeconds(), 2),
+    year: function (date) {
+        return format(date.getFullYear(), 4);
+    },
+    month: function (date) {
+        return format(date.getMonth() + 1, 2);
+    },
+    day: function (date) {
+        return format(date.getDate(), 2);
+    },
+    hour: function (date) {
+        return format(date.getHours(), 2);
+    },
+    minute: function (date) {
+        return format(date.getMinutes(), 2);
+    },
+    second: function (date) {
+        return format(date.getSeconds(), 2);
+    },
 };
 
 function date2obj(dateObject, neededFields) {
     const date = dateObject || new Date();
     const fields = neededFields || Object.keys(formatterBy);
 
-    let result;
+    let result = {};
 
-    fields.forEach(function(field) {
+    fields.forEach(function (field) {
         if (formatterBy[field]) {
-            result[field] = formatterBy[field](dateObject);
+            result[field] = formatterBy[field](date);
         }
     });
 
