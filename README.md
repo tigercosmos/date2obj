@@ -7,12 +7,12 @@
 
 Parse Date to Simple Object in JavaScript
 
-## Usage
+:collision: **Zero dependencies**
 
+## Usage
 ```bash
 npm i date2obj --save
 ```
-
 ```js
 date2obj() // Get current time
 date2obj(new Date()) // Equal to the first one
@@ -41,6 +41,27 @@ console.log(otherTime);
 //   year: "2018",
 //   month: "02",
 //   day: "14",
+//   hour: "02",
+//   minute: "12",
+//   second: "55"
+// }
+```
+## Configuration Options
+usage with options
+```js
+date2obj(dateObject [, options])
+```
+### fields
+default: `['year', 'month', 'day', 'hour', 'minute', 'second']`
+
+usage example:
+```js
+const otherTime = date2obj(new Date(1518545575000), {
+  fields: ['hour', 'minute', 'second']
+});
+console.log(otherTime);
+// Local time with the epoch
+// {
 //   hour: "02",
 //   minute: "12",
 //   second: "55"
