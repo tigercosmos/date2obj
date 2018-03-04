@@ -7,22 +7,22 @@ function format(val, figure) {
 }
 
 const formatterBy = {
-    year: function (date) {
+    year: date => {
         return format(date.getFullYear(), 4);
     },
-    month: function (date) {
+    month: date => {
         return format(date.getMonth() + 1, 2);
     },
-    day: function (date) {
+    day: date => {
         return format(date.getDate(), 2);
     },
-    hour: function (date) {
+    hour: date => {
         return format(date.getHours(), 2);
     },
-    minute: function (date) {
+    minute: date => {
         return format(date.getMinutes(), 2);
     },
-    second: function (date) {
+    second: date => {
         return format(date.getSeconds(), 2);
     },
 };
@@ -33,7 +33,7 @@ function date2obj(dateObject, options) {
 
     let result = {};
 
-    fields.forEach(function (field) {
+    fields.forEach(field => {
         if (formatterBy[field]) {
             result[field] = formatterBy[field](date);
         }
